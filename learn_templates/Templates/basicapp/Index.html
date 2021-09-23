@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "basicapp/Base.html" %}
+{% load my_template %}
+
+  {% block body_block %}
+
+    <h1>Welcome to index.</h1>
+    <!-- <h2>This is index using inheritance.</h2> -->
+    <h1>{{ text|cut:'World'}}</h1>
+    <h1>{{ number|add:"98" }}</h1>
+  {% endblock %}
